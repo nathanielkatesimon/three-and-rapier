@@ -22,8 +22,8 @@ class Renderer {
 
     setupCamera() {
         this.camera = new PerspectiveCamera(FOV, this.viewport.aspect, NEAR_PLANE, FAR_PLANE);
-        this.camera.position.z = 3;
-        this.camera.position.y = 3;
+        this.camera.position.z = 2;
+        this.camera.position.y = 2;
         this.camera.lookAt(0, 0, 0);
     }
 

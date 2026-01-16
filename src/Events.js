@@ -1,4 +1,3 @@
-
 class Events {
     constructor() {
         this.callbacks = {}
