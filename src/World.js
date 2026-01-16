@@ -9,6 +9,10 @@ class World {
         this.events = new Events();
         this.renderer = new Renderer();
     }
+    
+    initRapier(RAPIER) {
+        this.rapier = RAPIER;
+    }
 }
 
 export default World;
