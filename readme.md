@@ -1,13 +1,5 @@
-# Three + Rapier + Vite Boilerplate
+<img width="1914" height="927" alt="image" src="https://github.com/user-attachments/assets/50da9953-ad12-4356-ba2b-22783efb95cd" />
 
-**Opinionated, Personal-use boilerplate** — quick Three.js + WebGPU + optional Rapier starter.
+# Three + Rapier + Vite Template
 
----
-
-## Quickstart
-
-```bash
-npm create vite@latest my-project -- --template nathanielkatesimon/three-and-rapier
-cd my-project
-npm install
-npm run dev
+**Opinionated, Personal-use template** — quick Three.js + WebGPU + optional Rapier starter.
