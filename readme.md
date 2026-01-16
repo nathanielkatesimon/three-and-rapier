@@ -2,4 +2,15 @@
 
 # Three + Rapier + Vite Template
 
-**Opinionated, Personal-use template** — quick Three.js + WebGPU + optional Rapier starter.
+
+**Opinionated, Personal-use template** — quick Three.js + WebGPU + optional Rapier starter
+
+
+## Quick Start
+```bash
+npx degit nathanielkatesimon/three-and-rapier#main my-project
+cd my-project
+
+npm install
+npm run dev
+```
