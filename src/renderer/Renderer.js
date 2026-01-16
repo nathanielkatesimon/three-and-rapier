@@ -13,20 +13,20 @@ class Renderer {
         this.world.scene = new Scene();
         this.viewport = new Viewport();
         this.clock = new Clock();
-        
+
         this.setupCamera();
         this.setupEngine();
 
         this.world.events.on("viewport_resize", () => { this.updateProjections() });
     }
-    
+
     setupCamera() {
         this.camera = new PerspectiveCamera(FOV, this.viewport.aspect, NEAR_PLANE, FAR_PLANE);
         this.camera.position.z = 3;
         this.camera.position.y = 3;
         this.camera.lookAt(0, 0, 0);
     }
-    
+
     setupEngine() {
         this.engine = new WebGPURenderer({ antialias: true });
         this.engine.setSize(this.viewport.width, this.viewport.height);
@@ -39,7 +39,7 @@ class Renderer {
         this.camera.aspect = this.viewport.aspect;
         this.camera.updateProjectionMatrix();
     }
-    
+
     render() {
         this.engine.render(this.world.scene, this.camera);
         this.world.events.trigger("tick", [this.clock.getDelta(), this.clock.getElapsedTime()]);

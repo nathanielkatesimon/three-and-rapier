@@ -5,7 +5,7 @@ class World {
     constructor() {
         if (World._instance) return World._instance;
         World._instance = this;
-        
+
         this.events = new Events();
         this.renderer = new Renderer();
     }

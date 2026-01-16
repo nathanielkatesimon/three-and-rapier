@@ -9,7 +9,7 @@ class Viewport {
 
         addEventListener("resize", () => { this.updateViewport() })
     }
-    
+
     updateViewport() {
         this.width = window.innerWidth;
         this.height = window.innerHeight;
