@@ -17,7 +17,7 @@ class Renderer {
         this.setupCamera();
         this.setupEngine();
 
-        this.world.events.on("viewport_resize", () => { this.updateProjections() });
+        this.world.events.on("viewport_resize", () => { this.updateView() });
     }
 
     setupCamera() {
@@ -34,7 +34,7 @@ class Renderer {
         TARGET_DOM.appendChild(this.engine.domElement);
     }
 
-    updateProjections() {
+    updateView() {
         this.engine.setSize(this.viewport.width, this.viewport.height);
         this.camera.aspect = this.viewport.aspect;
         this.camera.updateProjectionMatrix();
