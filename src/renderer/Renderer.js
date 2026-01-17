@@ -41,8 +41,8 @@ class Renderer {
     }
 
     render() {
-        this.engine.render(this.world.scene, this.camera);
         this.world.events.trigger("tick", [this.clock.getDelta(), this.clock.getElapsedTime()]);
+        this.engine.render(this.world.scene, this.camera);
         requestAnimationFrame(() => { this.render() });
     }
 }

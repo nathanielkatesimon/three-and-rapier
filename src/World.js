@@ -1,4 +1,5 @@
 import Events from "./Events";
+import Inputs from "./inputs/Inputs";
 import Renderer from "./renderer/Renderer";
 
 class World {
@@ -8,6 +9,7 @@ class World {
 
         this.events = new Events();
         this.renderer = new Renderer();
+        this.inputs = new Inputs();
     }
     
     initRapier(RAPIER) {

@@ -16,7 +16,7 @@ async function main() {
     const boxMesh = new Mesh(boxGeometry, boxMaterial)
     WORLD.scene.add(boxMesh);
 
-    WORLD.events.on("tick", (delta, _time) => {
+    WORLD.events.on("tick", (delta, _t) => {
         boxMesh.rotateY(1 * delta);
     })
 
