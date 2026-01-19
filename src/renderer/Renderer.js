@@ -48,3 +48,4 @@ class Renderer {
 }
 
 export default Renderer;
+export { TARGET_DOM };
